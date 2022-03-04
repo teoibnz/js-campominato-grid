@@ -26,6 +26,8 @@ playButton.addEventListener('click', function(){
             addedBox.innerHTML = +i;
             addedBox.addEventListener('click', function (){
                 addedBox.classList.toggle('clicked');
+                addedBox.classList.add('text-white');
+
             })
         }
     } else if (selectItem() == 'medio'){
@@ -35,6 +37,8 @@ playButton.addEventListener('click', function(){
             addedBox.innerHTML = +i;
             addedBox.addEventListener('click', function (){
                 addedBox.classList.toggle('clicked');
+                addedBox.classList.add('text-white');
+
             })
         }
     } else {
@@ -44,6 +48,7 @@ playButton.addEventListener('click', function(){
             addedBox.innerHTML = +i;
             addedBox.addEventListener('click', function (){
                 addedBox.classList.toggle('clicked');
+                addedBox.classList.add('text-white');
             })
         }
     }
