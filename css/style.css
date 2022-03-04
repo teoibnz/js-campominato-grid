@@ -20,6 +20,9 @@ body{
     width: calc(100% / 10);
     height: calc(100% / 10);
     float: left;
+    color: white;
+    text-align: center;
+    line-height: 60px;
     
 }
 
