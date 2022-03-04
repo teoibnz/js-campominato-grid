@@ -17,18 +17,17 @@
 // Le validazioni e i controlli possiamo farli anche in un secondo momento.
 
 
-function selectItem (num){
+function selectItem (){
     let selectItem = document.getElementById('level-select');
-    selectItem.selectedIndex = num;
-    return num;
+    return (selectItem.value);
 }
 
 const playButton = document.querySelector('#play-button')
 
 playButton.addEventListener('click', function(){
-    if (selectItem(0)){
+    if (selectItem() == 'facile'){
         console.log(" è FACILE")
-    } else if (selectItem(1)){
+    } else if (selectItem() == 'medio'){
         console.log(" è medio")
     } else {
         console.log(" è difficile")
