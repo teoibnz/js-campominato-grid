@@ -22,11 +22,33 @@ function selectItem (){
     return (selectItem.value);
 }
 
-const playButton = document.querySelector('#play-button')
+function createNewSquare (){
+    let newBox = document.createElement('div');
+    newBox.classList.add('grid-easy-square');
+    return newBox;
+}
+
+const playButton = document.querySelector('#play-button');
+
+let  gridWrapper = document.getElementById('grid-wrapper');
+
 
 playButton.addEventListener('click', function(){
     if (selectItem() == 'facile'){
+        for (let i = 0; i < 100; i++) {
+            const addedBox = createNewSquare();
+            gridWrapper.appendChild(addedBox);
+            console.log(addedBox);
+            
+
+
+
+
+
+
+
         console.log(" è FACILE")
+        }
     } else if (selectItem() == 'medio'){
         console.log(" è medio")
     } else {
