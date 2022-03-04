@@ -9,3 +9,34 @@
 body{
     background-color: #7fffd4;
 }
+
+#grid-wrapper{
+    height: 600px;
+    width: 600px;
+}
+#grid-easy-square,
+#grid-medium-square,
+#grid-hard-square{
+    border: 3px solid white;
+    
+}
+
+
+#grid-easy-square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+#grid-medium-square{
+    width: calc(100% / 10);
+    height: calc(100% / 8);
+}
+
+#grid-hard-square{
+    width: calc(100% / 10);
+    height: calc(100% / 5);
+}
+
+.clicked{
+    background-color: #6495ed;
+}
